@@ -1,0 +1,578 @@
+@font-face {
+  font-family: "apercu";
+  src: url("https://assets.awwwards.com/assets/fonts/apercu/apercu-light-pro.woff2") format("woff2"), url("https://assets.awwwards.com/assets/fonts/apercu/apercu-light-pro.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "apercu";
+  src: url("https://assets.awwwards.com/assets/fonts/apercu/apercu-regular-pro.woff2") format("woff2"), url("https://assets.awwwards.com/assets/fonts/apercu/apercu-regular-pro.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "apercu";
+  src: url("https://assets.awwwards.com/assets/fonts/apercu/apercu-medium-pro.woff2") format("woff2"), url("https://assets.awwwards.com/assets/fonts/apercu/apercu-medium-pro.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "apercu";
+  src: url("https://assets.awwwards.com/assets/fonts/apercu/apercu-bold-pro.woff2") format("woff2"), url("https://assets.awwwards.com/assets/fonts/apercu/apercu-bold-pro.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  font-family: "apercu", sans-serif;
+  background-color: #f4f7f6;
+}
+
+#filterBar {
+  margin-top: 78px;
+  height: 70px;
+  border-top: 1px solid #e7ebeb;
+  border-bottom: 1px solid #e7ebeb;
+  font-size: 13px;
+}
+
+#filterBar ul {
+  height: 100%;
+}
+
+#filterBar ul li {
+  padding: 0 1.5rem;
+  border-left: 1px solid #e7ebeb;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#filterBar ul li span {
+  position: relative;
+}
+
+#filterBar ul li span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 3px;
+  border-color: transparent;
+  border-top-color: black;
+  right: -10px;
+  top: 30%;
+}
+
+#filterBar ul li.dropdown {
+  cursor: pointer;
+  position: relative;
+  padding: 0 calc(1.5rem + 10px) 0 1.5rem;
+}
+
+#filterBar ul li.dropdown::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #fdfdfd;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+#filterBar ul li.dropdown:hover::after {
+  opacity: 0.7;
+}
+
+.box-item {
+  background-color: #fcfcfc;
+  margin-bottom: 30px;
+}
+
+.box-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.box-item .site-snapshot {
+  position: relative;
+  overflow: hidden;
+}
+
+.box-item .site-snapshot img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.box-item .site-snapshot .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.box-item .site-snapshot .overlay .overlay-items {
+  padding: 24px 20px;
+}
+
+.box-item .site-snapshot .overlay .overlay-items .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 34px;
+  width: 34px;
+  margin-right: 2px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.box-item .site-snapshot .overlay .overlay-items button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 6px 18px;
+  font-size: 14px;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.box-item .site-snapshot .overlay .overlay-items .share {
+  bottom: 24px;
+  right: 20px;
+}
+
+.box-item .site-snapshot .overlay .overlay-items a {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.box-item .site-snapshot .overlay .overlay-items a:hover,
+.box-item .site-snapshot .overlay .overlay-items button:hover {
+  opacity: 0.75;
+}
+
+.box-item .site-snapshot:hover .overlay {
+  opacity: 1;
+}
+
+.box-item .site-snapshot:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.box-item .meta {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.box-item .author {
+  font-size: 12px;
+  height: 48px;
+}
+
+.box-item .author .author-name {
+  text-transform: uppercase;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box-item .author img {
+  width: 27px;
+  height: 27px;
+}
+
+.box-item .author .awards {
+  position: relative;
+  z-index: 2;
+  max-width: 70%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.box-item .author .award-badge {
+  display: inline-block;
+  border-radius: 16px;
+  height: 15px;
+  padding: 1px 5px;
+  margin-left: 2px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.box-item .author .award-badge.mw {
+  background-color: #ff8601;
+  position: relative;
+}
+
+.box-item .author .award-badge.mw:hover::after, .box-item .author .award-badge.mw:hover::before {
+  opacity: 1;
+}
+
+.box-item .author .award-badge.mw:hover::before {
+  top: -230%;
+}
+
+.box-item .author .award-badge.mw:hover::after {
+  top: -7px;
+}
+
+.box-item .author .award-badge.mw::before {
+  content: "Mobile Of the Week";
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: lighter;
+  white-space: nowrap;
+  padding: 4px 16px;
+  border-radius: 16px;
+  position: absolute;
+  top: -260%;
+  left: -240%;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.mw::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #ff8601;
+  left: 8px;
+  top: -14px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.soty {
+  background-color: #a6abab;
+  position: relative;
+}
+
+.box-item .author .award-badge.soty:hover::after, .box-item .author .award-badge.soty:hover::before {
+  opacity: 1;
+}
+
+.box-item .author .award-badge.soty:hover::before {
+  top: -230%;
+}
+
+.box-item .author .award-badge.soty:hover::after {
+  top: -7px;
+}
+
+.box-item .author .award-badge.soty::before {
+  content: "SITE OF THE YEAR";
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: lighter;
+  white-space: nowrap;
+  padding: 4px 16px;
+  border-radius: 16px;
+  position: absolute;
+  top: -260%;
+  left: -210%;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.soty::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #a6abab;
+  left: 8px;
+  top: -14px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.sotm {
+  background-color: #49c5b6;
+  position: relative;
+}
+
+.box-item .author .award-badge.sotm:hover::after, .box-item .author .award-badge.sotm:hover::before {
+  opacity: 1;
+}
+
+.box-item .author .award-badge.sotm:hover::before {
+  top: -230%;
+}
+
+.box-item .author .award-badge.sotm:hover::after {
+  top: -7px;
+}
+
+.box-item .author .award-badge.sotm::before {
+  content: "SITE OF THE MONTH";
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: lighter;
+  white-space: nowrap;
+  padding: 4px 16px;
+  border-radius: 16px;
+  position: absolute;
+  top: -260%;
+  left: -210%;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.sotm::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #49c5b6;
+  left: 8px;
+  top: -14px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.hm {
+  background-color: #9fd2d6;
+  position: relative;
+}
+
+.box-item .author .award-badge.hm:hover::after, .box-item .author .award-badge.hm:hover::before {
+  opacity: 1;
+}
+
+.box-item .author .award-badge.hm:hover::before {
+  top: -230%;
+}
+
+.box-item .author .award-badge.hm:hover::after {
+  top: -7px;
+}
+
+.box-item .author .award-badge.hm::before {
+  content: "HONOURABLE MENTION";
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: lighter;
+  white-space: nowrap;
+  padding: 4px 16px;
+  border-radius: 16px;
+  position: absolute;
+  top: -260%;
+  left: -240%;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.hm::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #9fd2d6;
+  left: 8px;
+  top: -14px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.dev {
+  background-color: #8154ef;
+  position: relative;
+}
+
+.box-item .author .award-badge.dev:hover::after, .box-item .author .award-badge.dev:hover::before {
+  opacity: 1;
+}
+
+.box-item .author .award-badge.dev:hover::before {
+  top: -230%;
+}
+
+.box-item .author .award-badge.dev:hover::after {
+  top: -7px;
+}
+
+.box-item .author .award-badge.dev::before {
+  content: "Developer  Site";
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: lighter;
+  white-space: nowrap;
+  padding: 4px 16px;
+  border-radius: 16px;
+  position: absolute;
+  top: -260%;
+  left: -180%;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.dev::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #8154ef;
+  left: 8px;
+  top: -14px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.sotd {
+  background-color: #ff4e4e;
+  position: relative;
+}
+
+.box-item .author .award-badge.sotd:hover::after, .box-item .author .award-badge.sotd:hover::before {
+  opacity: 1;
+}
+
+.box-item .author .award-badge.sotd:hover::before {
+  top: -230%;
+}
+
+.box-item .author .award-badge.sotd:hover::after {
+  top: -7px;
+}
+
+.box-item .author .award-badge.sotd::before {
+  content: "SITE OF THE DAY";
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: lighter;
+  white-space: nowrap;
+  padding: 4px 16px;
+  border-radius: 16px;
+  position: absolute;
+  top: -260%;
+  left: -160%;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box-item .author .award-badge.sotd::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #ff4e4e;
+  left: 8px;
+  top: -14px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+hr {
+  margin: 0;
+}
+
+.pager {
+  padding: 0 15px;
+}
+
+.pager ul {
+  overflow: hidden;
+  margin: 0;
+  height: 60px;
+}
+
+.pager ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.pager ul li.current {
+  background-color: black;
+  color: white;
+}
+
+.pager ul li:hover {
+  background-color: #e6eaea;
+}
+
+.pager button {
+  display: block;
+  padding: 0 2rem;
+  margin-left: 1rem;
+  border: 0;
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 715px) {
+  #filterBar {
+    overflow: hidden;
+  }
+  #filterBar ul {
+    height: calc(100% + 20px);
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+/*# sourceMappingURL=style.css.map */

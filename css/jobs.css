@@ -1,0 +1,173 @@
+body{padding-top: 180px;}
+
+nav{position: static;}
+
+#over{transition: none;}
+
+#jobs a:hover {
+    text-decoration: none;
+}
+
+#jobs span {
+    font-size: 12px;
+}
+
+.fixed-top {
+    z-index: 9999 !important;
+}
+
+.jobsNav {
+    height: 69px;
+    border: 1px rgb(226, 226, 226);
+    border-style: solid none;
+    background-color: #F4F7F6;
+}
+
+.jobsNav .filter .icon {
+    border-right: 1px solid rgb(226, 226, 226);
+}
+
+.jobsMenu {
+    background-color: #fff;
+    padding: 20px 30px;
+    height: 92px;
+    display: none;
+}
+
+.jobsMenu .links a {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #A6ABAB;
+    color: #000;
+    margin: 0 4px;
+    transition: all .4s ease;
+    font-weight: 600;
+}
+
+.jobsMenu .links a:hover {
+    border-color: #49c5b6;
+    color: #49c5b6;
+}
+
+.filterBtn {
+    transition: all .4s ease;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.filterBtn:hover {
+    background-color: #fff;
+    color: #A6ABAB;
+}
+
+.jobsMenu .closeMenu {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.submit {
+    font-size: 12px;
+}
+
+.submit a {
+    font-weight: 600;
+    margin-left: 5px;
+    color: #000;
+    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+}
+
+.submit a::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: .5px;
+    width: 0;
+    bottom: -1px;
+    left: 0;
+    transition: width .4s ease;
+}
+
+.submit a:hover::after {
+    width: 100%;
+}
+
+#jobs .post {
+    color: #49c5b6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .4s ease;
+}
+
+#jobs .post:hover {
+    color: #000;
+}
+
+#jobs .item {
+    transition: background-color .5s ease;
+    min-height: 413px;
+    padding-bottom: 50px !important;
+}
+
+#jobs .item:hover {
+    background-color: #EDF0F0;
+}
+
+#jobsContainer .item {
+    background-color: #fff;
+}
+
+#talentContainer .item {
+    background-color: #e6f4f2;
+}
+
+#jobs .item h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#jobs .item .name {
+    color: #49c5b6;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#jobs .item .img {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/profile-pic.png);
+    background-size: cover;
+    margin: 5px 0;
+}
+
+#jobs .item .item-link {
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#jobs .item .item-footer {
+    bottom: 10px;
+    left: 0;
+    padding: 29px;
+}
+
+#jobs .btn {
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+#jobs .btn:focus {
+    box-shadow: none;
+}
+
+#jobs .jobsBtn {
+    background-color: #fff;
+}
+
+#jobs .talentBtn {
+    background-color: #000;
+    color: #fff;
+}

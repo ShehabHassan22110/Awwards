@@ -1,0 +1,10 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    #jobs .submit{display: none !important;}
+}
+

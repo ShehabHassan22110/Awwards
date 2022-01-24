@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awwards</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Start Of Nav -->
+    <div id="over"></div>
+    <nav>
+        <div class="container-fluid">
+            <div class=" d-flex align-items-center justify-content-between ">
+
+                <div class="myNav ">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Home</a>
+                        <a href="winners.html">Winners</a>
+                        <a href="collection.html">Collection</a>
+                        <a href="jobs.html">Jobs&Talent</a>
+                    </div>
+                    <div id="main" class="">
+                        <span onclick="openNav()">&#9776;</span>
+                    </div>
+                </div>
+
+                <h1 class="h3 p-0 m-0 "><a href="#">awwwards</a></h1>
+
+                <ul class=" d-flex list-unstyled align-items-center m-0  ">
+                    <li class="py-3 px-4 font-weight-bold ">
+                        <a href="signin.html">REGISTER / LOG IN</a>
+                    </li>
+                    <li class="py-4 px-4 font-weight-bold main-bg">
+                        <a href="#" class="text-white">SUBMIT YOUR SITE!</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Of Nav -->
+
+    <header>
+        <div class="container-fluid py-5 text-white">
+            <div class="date clearfix">
+                <h3 class="float-left"><a class="h6 text-white font-weight-bold" href="">Sites of the day</a> <span
+                        class="h6 font-weight-normal"> Today Date</span></h3>
+                <div class="icon float-right  d-flex justify-content-center align-items-center rounded-circle border">
+                    <a class="text-light shareIcon" href=""><i class="fas fa-share-alt  "></i></a> </div>
+            </div>
+            <div class="head text-center mt-4">
+                <h2>Banorama</h2>
+                <p class="font-weight-bold">BY <span class="main-color">SPOON</span>FROM NORWAY WITH 7.3</p>
+            </div>
+            <div class="d-flex">
+                <div class="progress-circles  mx-auto text-center d-flex align-items-center ">
+                    <div class="design">
+                        <div id="designcircle"></div>
+                        <h6>DESIGN</h6>
+                    </div>
+                    <div class="usability">
+                        <div id="usabilitycircle"></div>
+                        <h6>USABILITY</h6>
+                    </div>
+                    <div class="creativity">
+                        <div id="creativitycircle"></div>
+                        <h6>CREATIVITY</h6>
+                    </div>
+                    <div class="content-cir">
+                        <div id="contentcircle"></div>
+                        <h6>CONTENT</h6>
+                    </div>
+                    <div class="mobile">
+                        <div id="mobiletcircle"></div>
+                        <h6>MOBILE</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews clearfix mt-5 ">
+                <div class="buttons float-left">
+                    <button class="btn btn-info rounded-pill font-weight-bold mr-2">Visit Site</button>
+                    <button class="btn btn-outline-light rounded-pill font-weight-bold ">Visit Site</button>
+                </div>
+                <div class="review float-right position-relative ">
+                    <button class="btn btn-outline-light rounded-pill font-weight-bold mr-2">Jury Votes</button>
+
+                    <img src="images/06.person1.webp" class="rounded-circle" alt="">
+                    <img src="images/06.person2.webp" class="rounded-circle" alt="">
+                    <img src="images/06.person3.webp" class="rounded-circle" alt="">
+                    <img src="images/06.person4.webp" class="rounded-circle" alt="">
+                    <!-- <div class="review-circle align-items-center d-flex flex-column p-4 bg-white text-dark">
+                    <div id="reviewcircle"></div>
+                    <h6>Vadim Tyurin</h6>
+                    <span>Russia</span>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="siteOfDay" class="siteOfDay ">
+        <div class="container-fluid">
+            <header class="clearfix my-4">
+                <h3 class="float-left"><a class="h6 font-weight-bold" href="">Sites of the day</a> <span
+                        class="h6 font-weight-normal"> Previous Winners</span></h3>
+                <h3 class="float-right"><a class="h6 font-weight-bold" href="">Mobile Excellence</a> <span
+                        class="h6 font-weight-normal"> Site of the week</span></h3>
+            </header>
+            <div class="sitesOfDay ">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/01.SOD1.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Banorama</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From Norway</p>
+                                    <p class="float-right">June 27, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">SPOON</a></span>
+                                    </div>
+                                    <div class="rightContent">
+                                        <span class="btn btn-info rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-warning text-white rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-danger rounded-pill px-1 py-0 ">S O T D </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/01.SOD2.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Afterglo</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From Canada</p>
+                                    <p class="float-right">June 28, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">LOUIS PAQUET</a></span>
+                                    </div>
+                                    <div class="rightContent">
+                                        <span class="btn btn-info rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-warning text-white rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-danger rounded-pill px-1 py-0 ">S O T D </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/01.SOD3.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Eidos Shanghai</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From Canada</p>
+                                    <p class="float-right">June 26, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">LOCOMOTIVE</a></span>
+                                    </div>
+                                    <div class="rightContent">
+                                        <span class="btn btn-info rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-warning text-white rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-danger rounded-pill px-1 py-0 ">S O T D </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/01.SOD4.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Big Green Egg</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From United Kingdom</p>
+                                    <p class="float-right">June 23, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">ROTATE°</a></span>
+                                    </div>
+                                    <div class="rightContent">
+                                        <span class="btn btn-info rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-warning text-white rounded-pill px-1 py-0 ">H M </span>
+                                        <span class="btn btn-danger rounded-pill px-1 py-0 ">S O T D </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--  -->
+    <section class="nominees ">
+        <div class="container-fluid">
+            <header class=" my-4">
+                <h3><a class="h6 font-weight-bold" href="">Nominees </a> <span class="h6 font-weight-normal"> We need
+                        your vote!</span></h3>
+            </header>
+            <div class="sitesOfDay ">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/02.no1.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <button id="nomineesVote"
+                                        class="btn btn-light rounded-pill px-4 position-absolute">Vote Now</button>
+                                    <div
+                                        class=" icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Songs from Scratch</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From United States</p>
+                                    <p class="float-right">June 28, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">FUNKHAUS</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/02.no2.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <button id="nomineesVote"
+                                        class="btn btn-light rounded-pill px-4 position-absolute">Vote Now</button>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">COLLAB</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From Switzerland</p>
+                                    <p class="float-right">June 29, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">JONAS REYMONDIN</a></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/02.no3.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <button id="nomineesVote"
+                                        class="btn btn-light rounded-pill px-4 position-absolute">Vote Now</button>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Duck Design Studio 2021</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From Brazil</p>
+                                    <p class="float-right">June 29, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href=""> DUCK DESIGN STUDIO</a></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/02.no4.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <button id="nomineesVote"
+                                        class="btn btn-light rounded-pill px-4 position-absolute">Vote Now</button>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Hulu Pride</a></h4>
+                                <div class="date clearfix">
+                                    <p class="float-left">From United States</p>
+                                    <p class="float-right">June 28, 2021</p>
+                                </div>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">DOGSTUDIO</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="resources">
+        <div class="container-fluid">
+            <header class="my-4">
+                <h3><a class="h6 font-weight-bold" href="">Resources</a> <span class="h6 font-weight-normal">Stuff
+                        Digital Designers Love!</span></h3>
+            </header>
+            <div class="sitesOfDay ">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-3 ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <video width="100%" autoplay muted loop>
+                                    <source src="images/05.res1.mp4" type="video/mp4">
+                                </video>
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Afterglo - Feel-good body-safe intimate online store</a></h4>
+                                <p>Added to <a class="font-weight-bold" href=""> E-Commerce</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">SPOON</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/05.res2.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Case Study: LIONS GOOD NEWS 2020 by SHIFTBRAIN</a></h4>
+                                <p>Added to <a class="font-weight-bold" href=""> Web Design</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href=""> SHIFTBRAIN</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/05.res3.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Neutral Face - Sans serif free font <br><br> </a></h4>
+                                <p>Added to <a class="font-weight-bold" href="">Free Fonts</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">AWWWARDS</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3  ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/01.SOD1.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Afterglo - Feel-good body-safe intimate online store </a></h4>
+                                <p>Added to <a class="font-weight-bold" href=""> E-Commerce</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href="">SPOON</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3  ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/05.res5.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Neutral Face - Sans serif free font <br><br></a></h4>
+                                <p>Added to <a class="font-weight-bold" href=""> Free Fonts</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href=""> AWWWARDS</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3  ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/05.res6.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">FBO Particles with Three.js <br><br></a></h4>
+                                <p>Added to <a class="font-weight-bold" href="">Articles</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href=""> AWWWARDS</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3  ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/05.res7.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">20 Figma Plugins and Tools to Boost your Design Workflow</a></h4>
+                                <p>Added to <a class="font-weight-bold" href="">Web Design</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href=""> AWWWARDS</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3  ">
+                        <div class="siteDetails bg-white h-100">
+                            <div class="siteImage position-relative overflow-hidden">
+                                <img src="images/05.res8.webp" class="w-100" alt="">
+                                <div class="overlay position-absolute p-3  d-flex flex-wrap align-content-between ">
+                                    <div class="contain-top d-flex justify-content-between align-items-start w-100 ">
+                                        <div class="icons d-flex   ">
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-facebook-f  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-twitter  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-pinterest-p  "></i></a> </div>
+                                            <div
+                                                class="icon mr-1 d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                                <a href=""><i class="fab fa-linkedin-in  "></i></a> </div>
+                                        </div>
+                                        <span
+                                            class=" btn btn-outline-light rounded-pill font-weight-bold">Collect</span>
+                                    </div>
+                                    <div
+                                        class="icon ml-auto mt-5 mt-auto d-flex justify-content-center align-items-center rounded-circle btn btn-outline-light">
+                                        <a href=""><i class="fas fa-reply fa-flip-horizontal"></i></a> </div>
+                                </div>
+                            </div>
+                            <div class="siteContent p-3">
+                                <h4><a href="">Sliding Shapes Animation<br><br></a></h4>
+                                <p>Added to <a class="font-weight-bold" href="">Menu Inspiration</a></p>
+                                <div class="brdr mb-3"></div>
+                                <div class="footer d-flex justify-content-between d-flex align-items-center">
+                                    <div class="leftContent d-flex align-items-center ">
+                                        <img src="images/06.person6.webp" class="mw-100 rounded-circle mr-2" alt="">
+                                        <span>BY <a class="" href=""> GOODLOVE</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="py-5 mt-5">
+        <div class="container-fluid">
+            <p>The awards for design, creativity and innovation on the Internet</p>
+            <div class="links mb-3">
+                <a href="" class="font-weight-bold mr-3">Academy</a>
+                <a href="" class="font-weight-bold mr-3">Directory</a>
+                <a href="" class="font-weight-bold mr-3">Jobs</a>
+                <a href="" class="font-weight-bold mr-3">About Us</a>
+                <a href="" class="font-weight-bold mr-3">Winners</a>
+                <a href="" class="font-weight-bold mr-3">Nominees</a>
+                <a href="" class="font-weight-bold mr-3">blog</a>
+            </div>
+            <div class="socila">
+                <span class="font font-weight-bold mr-2">Follow us </span>
+                <a href="" class="mr-2">Twitter</a>
+                <a href="" class="mr-2">Facebook</a>
+                <a href="" class="mr-2">Youtube</a>
+                <a href="" class="mr-2">Insagram</a>
+                <a href="" class="mr-2">linkdin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+#filterBar {
+    margin-top: 78px;
+    height: 70px;
+    border-top: 1px solid #e7ebeb;
+    border-bottom: 1px solid #e7ebeb;
+    font-size: 13px;
+  }
+  
+  #filterBar ul {
+    height: 100%;
+  }
+  
+  #filterBar ul li {
+    padding: 0 1.5rem;
+    border-left: 1px solid #e7ebeb;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #filterBar ul li span {
+    position: relative;
+  }
+  
+  #filterBar ul li span::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 3px;
+    border-color: transparent;
+    border-top-color: black;
+    right: -10px;
+    top: 30%;
+  }
+  
+  #filterBar ul li.dropdown {
+    cursor: pointer;
+    position: relative;
+    padding: 0 calc(1.5rem + 10px) 0 1.5rem;
+  }
+  
+  #filterBar ul li.dropdown::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fdfdfd;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  
+  #filterBar ul li.dropdown:hover::after {
+    opacity: 0.7;
+  }
+.card {
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    transition: transform 1s;
+}
+.card img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.card h6 {
+    margin-top: 30px;
+}
+.card-body {
+    margin-top: 20px;
+}
+.card-body img  {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+/* .card img:hover {
+    transform: scale(1);
+    transition: 1.5s;
+} */
+.card-body i  {
+    margin-left: 5px;
+    font-size: 18px;
+}
+.imgg {
+    margin-top: 30px;
+}
+.awwwards {
+    display: inline-block;
+    color: darkturquoise;
+}
+.awwwards:hover {
+    color: #000;
+    transition: 1s;
+}
+.pager {
+    padding: 0 15px;
+  }
+  
+  .pager ul {
+    overflow: hidden;
+    margin: 0;
+    height: 60px;
+  }
+  
+  .pager ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+  }
+  
+  .pager ul li.current {
+    background-color: black;
+    color: white;
+  }
+  
+  .pager ul li:hover {
+    background-color: #e6eaea;
+  }
+  
+  .pager button {
+    display: block;
+    padding: 0 2rem;
+    margin-left: 1rem;
+    border: 0;
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    white-space: nowrap;
+  }
+
+  

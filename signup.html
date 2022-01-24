@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/signing.css">
+        <title>Sign Up</title>
+
+    </head>
+    <body>
+        <div id="over"></div>
+        <nav >
+            <div class="container">
+                <div class=" d-flex align-items-center justify-content-between ">
+                    
+                    <div class="myNav ">
+                     <div id="mySidenav" class="sidenav">
+                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                         <a href="index.html">Home</a>
+                         <a href="nominees.html">Nominees</a>
+                         <a href="collection.html">Collection</a>
+                         <a href="jobs.html">Jobs&Talent</a>
+                     </div>
+                     <div id="main" class="">
+                         <span onclick="openNav()">&#9776;</span>
+                     </div>
+                    </div>
+                    <h1 class="h3 p-0 m-0 "><a href="index.html">awwwards</a></h1>
+                 </div>
+         
+            </div>
+    </nav>
+
+       <div class="content w-50 mx-auto my-5 p-5 ">
+           <h1 class="text-center text-info mb-4">Sign Up</h1>
+           
+           <input id="name" onkeyup="checkNameInput()" type="text" class="in1 form-control text-dark" placeholder="Enter Your Name" >
+           <div id="alert1" class="d-none alert alert-danger border px-2 py-1 w-100"></div>
+           <input id="email"onkeyup="checkEmailInput()" type="email" class="in1 mt-3 form-control text-dark" placeholder="Enter Your Email" >
+           <div id="alert2" class="d-none alert alert-danger border px-2 py-1 w-100"></div>
+           <input id="password" onkeyup="checkPasswordInput()" type="password" class="in2 mt-3 form-control text-dark"placeholder="Enter Your Password" >
+           <div id="alert3" class="d-none alert alert-danger border px-2 py-1 w-100"></div>
+
+           <div id="alertAll" class="d-none mt-3 text-center "></div>
+           <button id="signUp" onclick="signUp()" class=" w-100 mb-3 mt-4 btn btn-outline-info font-weight-bold">Sign Up</button>
+           <p class="text-center text-info">You have an account?<a class="text-info font-weight-bold" href="signin.html"> Sign In</a> </p>
+       </div>
+
+        <script src="js/signing.js"></script>
+    </body>
+</html>
